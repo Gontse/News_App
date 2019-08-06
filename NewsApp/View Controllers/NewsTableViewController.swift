@@ -79,7 +79,7 @@ class NewsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-           let viewModel = self.newsListViewModel.newsViewModel(at: indexPath.row)
+           let viewModel = self.newsListViewModel.newsViewModel(at: indexPath.section)
      
         
         if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Article_VC") as? ArticleViewController{
